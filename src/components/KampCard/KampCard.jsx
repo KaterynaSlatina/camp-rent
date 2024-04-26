@@ -4,8 +4,8 @@ import Modal from "../Modal/Modal";
 import svg from "../../assets/icons/icons.svg";
 import KampDetails from "../KampsDetails/KampDetails";
 import { useDispatch, useSelector } from "react-redux";
-import { addFavorite, removeFavorite } from "../../redux/favoritesSlice";
-import { selectFavoriteKamp } from "../../redux/selectors";
+import { addFavorite, removeFavorite } from "../../store/favoritesSlice";
+import { selectFavoriteKamp } from "../../store/selectors";
 
 export default function KampCard({ kamps }) {
   const [isOpenModal, setIsOpenModal] = useState(false);

@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-import { selectFavoriteKamp } from "../../redux/selectors";
+import { selectFavoriteKamp } from "../../store/selectors";
 import svg from "../../assets/icons/icons.svg";
 import css from "./FavoriteList.module.css";
-import { removeFavorite } from "../../redux/favoritesSlice";
+import { removeFavorite } from "../../store/favoritesSlice";
 
 export default function FavoriteList() {
   const favorites = useSelector(selectFavoriteKamp);

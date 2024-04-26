@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import KampCard from "../KampCard/KampCard";
-import { fetchKamps } from "../../redux/operations";
+import { fetchKamps } from "../../store/operations";
 import { useDispatch, useSelector } from "react-redux";
+import css from "./KampList.module.css";
+import { incrementLoadedItems, setPage } from "../../store/kampsSlice";
 import {
   selectCurrentPage,
   selectKamps,
   selectLoadedItems,
-} from "../../redux/selectors";
-import css from "./KampList.module.css";
-import { incrementLoadedItems, setPage } from "../../redux/kampsSlice";
+} from "../../store/selectors";
 
 export default function KampsList() {
   const dispatch = useDispatch();
